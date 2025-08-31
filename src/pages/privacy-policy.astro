@@ -127,6 +127,21 @@ import Layout from "../layouts/Layout.astro";
         <b>Logging clarity:</b> We do not log private chat content or personas in production. We only log high‑level usage (for example, model name, token usage) and errors.
       </p>
 
+      <h3>Chat data</h3>
+      <ul>
+        <li><b>Storage</b>: Your conversations/messages are stored in our hosted database (Neon) so that you can access your chat history.</li>
+        <li><b>Access policy</b>: We do not read your chats. Only if you report an issue and provide explicit consent will we review the specific items you identify, and only to resolve that request.</li>
+        <li><b>No chat logging</b>: We never log chat content for debugging or analytics. We log usage only (token counts, approximate cost, model ID) and errors without message content.</li>
+        <li><b>Providers and routing</b>: We proxy requests through OpenRouter or directly to model providers. We do not attach your account/user identifiers to provider requests. Any personal data in prompts is only what you choose to send.</li>
+        <li><b>Free models</b>: Free models may use your prompts/outputs for training/evaluation per provider defaults and may be unstable or unavailable. Our side imposes no additional usage limits (provider limits may still apply).</li>
+        <li><b>Transparency labels</b>: Where possible we show model/provider names (e.g., Venice) so you can review their policies. We plan to add icons/labels that summarize data usage and provider policies when such information is available.</li>
+        <li><b>Guidance</b>: Do not include sensitive personal information in chats. You control what you share.</li>
+        <li><b>Future</b>: We are working on end‑to‑end encrypted chats and local‑only chat options for maximum anonymity.</li>
+      </ul>
+      <p>
+        <b>Logging clarity:</b> We do not log private chat content or personas in production. We only log high‑level usage (for example, model name, token usage) and errors.
+      </p>
+
       <h3>Payments</h3>
       <p>
         We use Polar for checkout and webhooks. We process order/checkout IDs, product IDs, token amounts, and your external user ID (Clerk ID) to credit tokens. Payment details are processed by Polar and/or its payment service provider; we do not store card data.
@@ -194,7 +209,7 @@ import Layout from "../layouts/Layout.astro";
 
       <h3>Children’s privacy</h3>
       <p>
-        Persona is not directed to children. We do not knowingly collect data from children under applicable age thresholds (e.g., under 13 or as defined by local law).
+        Persona is for <b>adults only</b>. We do not knowingly collect data from anyone under <b>18</b> years old, or under the age of majority in their jurisdiction if higher. If you believe a minor has provided us data, contact us so we can delete it and take appropriate steps.
       </p>
 
       <h3>Automated decision‑making</h3>
@@ -217,7 +232,7 @@ import Layout from "../layouts/Layout.astro";
         <li>everything else: <a href="mailto:mynth@mynth.io">mynth@mynth.io</a></li>
       </ul>
 
-      <p><i>Effective date: 2025-08-10</i></p>
+      <p><i>Effective date: 2025-08-31</i></p>
 
       <hr class="bg-neutral-100 my-10" />
       <p>

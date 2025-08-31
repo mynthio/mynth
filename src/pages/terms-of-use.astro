@@ -35,7 +35,7 @@ import Layout from "../layouts/Layout.astro";
 
       <h2>Eligibility and Accounts</h2>
       <ul>
-        <li><b>Minimum age</b>: You must be at least <b>16</b> years old to use the Services. To access Adult Mode (NSFW, as defined below), you must be <b>18+</b>.</li>
+        <li><b>Minimum age</b>: For <b>Persona</b> (AI persona generation and chat), you must be at least <b>18</b> years old or the age of majority in your jurisdiction, whichever is higher. You may not use Persona if you are under this age. For other Mynth Services (if available), you must be at least <b>16</b> unless a higher age is required by law.</li>
         <li><b>Compliance</b>: You must comply with local laws. Where local law requires a higher age, that higher age applies.</li>
         <li><b>Registration</b>: Accounts are provided via Clerk. Provide accurate information, keep your credentials secure, and you are responsible for activity under your account.</li>
         <li><b>Account actions</b>: We may suspend or terminate accounts for violations, fraud/abuse, or legal/compliance reasons. You may delete your account; see Data and Deletion in our Privacy Policy for effects.</li>
@@ -79,6 +79,10 @@ import Layout from "../layouts/Layout.astro";
       </p>
 
       <h2>Persona Addendum</h2>
+      <h3>Eligibility</h3>
+      <ul>
+        <li>Persona is for <b>adults only</b>. You must be at least <b>18</b> years old, or the age of majority in your jurisdiction, whichever is higher. Do not use Persona if you are under this age.</li>
+      </ul>
       <h3>Adult Mode (NSFW)</h3>
       <ul>
         <li>NSFW content is <b>disabled by default</b> and can be enabled only by toggling Adult Mode in the app.</li>
@@ -86,13 +90,22 @@ import Layout from "../layouts/Layout.astro";
         <li>Adult Mode may be unavailable in certain jurisdictions.</li>
         <li>Under no circumstances may you generate or upload CSAM, sexual content involving minors, or non‑consensual intimate imagery. Violations may result in immediate suspension and reporting where required.</li>
       </ul>
-
+      <h3>Chats</h3>
+      <ul>
+        <li><b>Storage</b>: Persona stores your conversations/messages in our hosted database (Neon). Chats are available only to you within the app.</li>
+        <li><b>Access policy</b>: Our team does not read your chats. The only exception is when you explicitly report an issue and provide written permission for us to review specific items solely to resolve that request.</li>
+        <li><b>No chat logging</b>: We never log chat content or messages, even for debugging. We log <i>usage only</i> (e.g., token counts, approximate cost, model ID), never your prompts or replies.</li>
+        <li><b>Providers and routing</b>: We route text generations via OpenRouter and other providers. We do <b>not</b> include your account/user identifiers in headers or payloads beyond the content you choose to send; providers do not receive your user identity from us.</li>
+        <li><b>Free models disclaimer</b>: Models we offer for free may use prompts/outputs for training/evaluation per provider defaults and may be unstable, rate‑limited, or unavailable. We do not impose our own usage limits on those free models (provider limits may still apply).</li>
+        <li><b>Transparency</b>: We identify certain models with their provider (e.g., Venice) so you can review that provider’s policies. We plan to add icons/labels that communicate data usage and privacy notes for selected models as information becomes available.</li>
+        <li><b>Personal data caution</b>: Do not share sensitive or personal information in chats. You are responsible for what you choose to input.</li>
+        <li><b>Roadmap</b>: We are working on end‑to‑end encrypted chats and local‑only chat modes to maximize anonymity in the future.</li>
+      </ul>
       <h3>Persona Generations and Tokens</h3>
       <ul>
         <li>Token costs vary by model and feature and may change. Tokens may be deducted for partial/failed generations.</li>
         <li>Automatic token refunds may occur on detectable errors; we may issue discretionary token credits for technical issues upon request.</li>
       </ul>
-
       <h3>Publishing</h3>
       <p>
         Publishing personas/images to a public library is <b>currently not supported</b>. If/when enabled, additional terms will apply and will be communicated in‑app and in these Terms. Until then, any references to publishing are not applicable.
@@ -127,7 +140,7 @@ import Layout from "../layouts/Layout.astro";
         <li>everything else: <a href="mailto:mynth@mynth.io">mynth@mynth.io</a></li>
       </ul>
 
-      <p><i>These Terms were last updated on 2025-08-11</i></p>
+      <p><i>These Terms were last updated on 2025-08-31</i></p>
     </div>
   </main></Layout
 >
